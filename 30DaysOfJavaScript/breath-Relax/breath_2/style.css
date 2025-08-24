@@ -1,0 +1,26 @@
+ body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a0f20, #1b2a42, #2c5364);
+  overflow: hidden;
+}
+
+#text {
+  display: inline;
+  color: #00ffff; /* Neon yazı rengi */
+    font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;  
+    text-shadow:
+    0 0 10px rgba(0,255,255,0.7),
+    0 0 20px rgba(0,255,255,0.5),
+    0 0 40px rgba(0,255,255,0.3),
+    0 0 80px rgba(0,255,255,0.2);
+  transition: transform 0.5s ease, text-shadow 0.5s ease;  
+ }  
+/* bursaı kalıcak */
+
+ 

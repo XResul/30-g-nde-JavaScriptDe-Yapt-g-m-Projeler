@@ -1,0 +1,7 @@
+Genelde setTimeout ile yapılan şeyler:
+
+Mesaj göstermek (ör: bildirim, uyarı)
+
+Animasyonları veya gecikmeli işlemleri kontrol etmek
+
+Bir işlemi belli bir süre sonra tetiklemek

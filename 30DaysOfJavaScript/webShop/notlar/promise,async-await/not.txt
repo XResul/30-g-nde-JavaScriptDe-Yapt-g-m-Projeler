@@ -1,0 +1,6 @@
+| Özellik            | Senkron Kontrol          | Async/Await (Promise)                   |
+| ------------------ | ------------------------ | --------------------------------------- |
+| Veri kontrolü      | Anlık                    | Asenkron / simüle edilmiş bekleme       |
+| Hata yönetimi      | try/catch                | try/catch + Promise resolve/reject      |
+| Gerçekçi kullanım  | Düşük                    | Yüksek (API ile uyumlu)                 |
+| Kullanıcı deneyimi | Mesaj hemen kaybolabilir | Mesaj gösterimi + gecikmeli yönlendirme |

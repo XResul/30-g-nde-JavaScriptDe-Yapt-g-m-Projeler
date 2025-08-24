@@ -1,0 +1,20 @@
+ //!! promise away async(asenkron)
+  //aray fonksiyonlları
+  //shopping cart(alışveriş mantığı ile )
+  //apiler sahte ürün verileri veriyor chatgptye sor
+  //form yapmak
+//BU KISIMI BİTMEDİK DAHA
+
+
+  //döngüler
+  //!!javascript reduce
+
+  //section storeg(indirim reklamı )
+ local storage nedir
+  //popup açma
+
+  //modal cookies
+
+  //??bir idirimin bitmesi için geri sayım
+
+ECMAScript(ES6) Nedir, ES6 ile Gelen Yenilikler

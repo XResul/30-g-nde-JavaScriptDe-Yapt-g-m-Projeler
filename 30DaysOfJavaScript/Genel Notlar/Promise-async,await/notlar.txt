@@ -1,0 +1,43 @@
+PROMİSE VE ASYNC-AWAİT e ÖRNEK
+
+// Yemek siparişi veren fonksiyon (Promise döndürür)
+function yemekSiparisEt(yemek) {
+  return new Promise((resolve, reject) => {
+    console.log(`Garson: "${yemek}" siparişinizi mutfağa ilettim.`);
+
+    setTimeout(() => {
+      const malzemeVar = Math.random() > 0.3; // %70 olasılıkla malzeme var
+      if (malzemeVar) {
+        resolve(`Mutfak: "${yemek}" hazır, afiyet olsun!`);
+      } else {
+        reject(`Mutfak: Üzgünüz, "${yemek}" için malzeme kalmamış.`);
+      }
+    }, 2000); // 2 saniye sonra cevap geliyor (asenkron süreç)
+  });
+}
+
+// ------------------------
+// 1. Promise ile kullanım
+// ------------------------
+yemekSiparisEt("Pizza")
+  .then(sonuc => {
+    console.log("Müşteri:", sonuc); // Yemek başarılı geldi
+  })
+  .catch(hata => {
+    console.error("Müşteri:", hata); // Yemek hazırlanamadı
+  });
+
+// ------------------------
+// 2. async/await ile kullanım
+// ------------------------
+async function yemekYe() {
+  try {
+    console.log("Müşteri: Yemek siparişi veriyorum...");
+    const cevap = await yemekSiparisEt("Burger"); 
+    console.log("Müşteri:", cevap); // Yemek hazırsa burası çalışır
+  } catch (hata) {
+    console.error("Müşteri:", hata); // Hata varsa burası çalışır
+  }
+}
+
+yemekYe();
