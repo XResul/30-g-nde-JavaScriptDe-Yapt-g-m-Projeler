@@ -1,0 +1,34 @@
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    padding: 50px;
+  }
+
+  body.light {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  body.dark {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+
+    body.green {
+    background-color:#b3ffb3;
+    color: #006600;
+  }
+
+  body.darkGreen {
+    background-color:#006600;
+    color: #b3ffb3;
+  }
