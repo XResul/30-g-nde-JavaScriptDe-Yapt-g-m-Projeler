@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main 2.Gün</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 bg-blue-600 text-white">
+      <h1 class="text-2xl font-bold">test</h1>
+      <ul class="flex gap-6">
+        <li><a href="#hero" class="hover:underline">Ana Sayfa</a></li>
+        <li><a href="#about" class="hover:underline">Hakkımızda</a></li>
+        <li><a href="#contact" class="hover:underline">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="flex flex-col justify-center items-center text-center h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+    >
+      <h2 class="text-4xl font-extrabold mb-4">Hoşgeldiniz test!</h2>
+      <p class="max-w-lg">
+        Bu, Tailwind CSS kullanarak yapılmış tek sayfalık bir web sitesi
+        örneğidir.
+      </p>
+      <button
+        class="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200"
+      >
+        Başlayalım
+      </button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 bg-white text-center">
+      <h3 class="text-3xl font-bold mb-6">Hakkımızda</h3>
+      <p class="max-w-2xl mx-auto text-gray-700 mb-12">
+        Biz frontend geliştirmeyi öğrenen bir ekibiz. Hedefimiz Next.js ve
+        Tailwind CSS ile modern web uygulamaları geliştirmek!
+      </p>
+
+      <!-- Kartlar -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Kart 1 -->
+        <div
+          class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Frontend"
+            class="rounded-md mb-4"
+          />
+          <h4 class="text-xl font-bold mb-2">Frontend</h4>
+          <p class="text-gray-600">
+            HTML, CSS, JavaScript ve React/Next.js ile kullanıcı arayüzleri
+            geliştirme.
+          </p>
+        </div>
+
+        <!-- Kart 2 -->
+        <div
+          class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Backend"
+            class="rounded-md mb-4"
+          />
+          <h4 class="text-xl font-bold mb-2">Backend</h4>
+          <p class="text-gray-600">
+            API geliştirme, veritabanı yönetimi ve server-side işlemler.
+          </p>
+        </div>
+
+        <!-- Kart 3 -->
+        <div
+          class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Deployment"
+            class="rounded-md mb-4"
+          />
+          <h4 class="text-xl font-bold mb-2">Deployment</h4>
+          <p class="text-gray-600">
+            Projeleri canlıya alma, hosting ve bulut çözümleri (Vercel, Netlify,
+            AWS).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-200 text-center">
+      <h3 class="text-3xl font-bold mb-6">İletişim</h3>
+      <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <input
+          type="text"
+          placeholder="Adınız"
+          class="w-full mb-4 p-3 border rounded-md"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full mb-4 p-3 border rounded-md"
+        />
+        <textarea
+          placeholder="Mesajınız"
+          class="w-full mb-4 p-3 border rounded-md"
+        ></textarea>
+        <button
+          class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700"
+        >
+          Gönder
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
